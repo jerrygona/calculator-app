@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  padding: 20px;
+}
+
+.ant-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ant-input {
+  text-align: right;
+  font-size: 24px;
+  font-family: monospace;
+}
+
+.ant-btn {
+  height: 48px;
+  font-size: 18px;
+} 
