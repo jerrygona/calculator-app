@@ -2,7 +2,7 @@
   "name": "mes-frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
+ "homepage": "https://jerrygona.github.io/calculator-app",
   "dependencies": {
     "@ant-design/icons": "^5.0.0",
     "@ant-design/pro-components": "^2.6.0",
@@ -28,7 +28,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+
   },
   "eslintConfig": {
     "extends": [
