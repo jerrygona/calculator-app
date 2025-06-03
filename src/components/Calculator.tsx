@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { Button, Card, Input, Space } from 'antd';
+import { Button, Card, Input } from 'antd';
 import { DeleteOutlined } from '@ant-design/icons';
 
 const Calculator: React.FC = () => {
   const [display, setDisplay] = useState<string>('');
-  const [result, setResult] = useState<string>('');
+  //const [result, setResult] = useState<string>('');
 
   const handleNumberClick = (num: string) => {
     setDisplay(prev => prev + num);
