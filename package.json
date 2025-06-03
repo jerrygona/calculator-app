@@ -2,6 +2,7 @@
   "name": "mes-frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@ant-design/icons": "^5.0.0",
     "@ant-design/pro-components": "^2.6.0",
