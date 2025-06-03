@@ -4,7 +4,6 @@ import { DeleteOutlined } from '@ant-design/icons';
 
 const Calculator: React.FC = () => {
   const [display, setDisplay] = useState<string>('');
-  //const [result, setResult] = useState<string>('');
 
   const handleNumberClick = (num: string) => {
     setDisplay(prev => prev + num);
@@ -16,17 +15,15 @@ const Calculator: React.FC = () => {
 
   const handleClear = () => {
     setDisplay('');
-    setResult('');
   };
 
   const handleCalculate = () => {
     try {
       // eslint-disable-next-line no-eval
       const calculatedResult = eval(display);
-      setResult(calculatedResult.toString());
       setDisplay(calculatedResult.toString());
     } catch (error) {
-      setResult('错误');
+      setDisplay('错误');
     }
   };
 
@@ -77,4 +74,4 @@ const Calculator: React.FC = () => {
   );
 };
 
-export default Calculator; 
+export default Calculator;
